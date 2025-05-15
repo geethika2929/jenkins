@@ -6,6 +6,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo "Author: Geethika Choudhary Yadlapalli"
+                echo "Roll Number: SE22UCSE101"
                 echo "Building.."
                 sh '''
                 echo "Building from Jenkins file"
@@ -30,4 +32,5 @@ pipeline {
         }
     }
 }
+
 
