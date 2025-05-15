@@ -1,11 +1,7 @@
 pipeline {
-    agent { 
-        node {
-            label 'docker-agent-alpine'
-            }
-      }
+    agent any
     triggers {
-        pollSCM '*/5 * * * *'
+        pollSCM('*/5 * * * *')
     }
     stages {
         stage('Build') {
@@ -34,3 +30,4 @@ pipeline {
         }
     }
 }
+
