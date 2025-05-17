@@ -6,31 +6,32 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Author: Aditya Rachakonda
-                echo "Roll Number:SE22UCSE014"
-                echo "Building.."
+                echo "Author: Aditya Rachakonda"
+                echo "Roll Number: SE22UCSE014"
+                echo "Building..."
                 sh '''
-                echo "Building from Jenkins file"
+                    echo "Building from Jenkins file"
                 '''
             }
         }
         stage('Test') {
             steps {
-                echo "Testing.."
+                echo "Testing..."
                 sh '''
-                echo "Testing the build triggered from Jenkins file."
+                    echo "Testing the build triggered from Jenkins file."
                 '''
             }
         }
         stage('Deliver') {
             steps {
-                echo 'Deliver....'
+                echo "Deliver..."
                 sh '''
-                echo "doing delivery stuff.."
+                    echo "Doing delivery stuff..."
                 '''
             }
         }
     }
 }
+
 
 
