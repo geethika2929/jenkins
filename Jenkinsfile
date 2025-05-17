@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Author: Aditya Rachakonda
-                echo "Roll Number: SE22UCSE014"
+                echo "Roll Number:SE22UCSE014"
                 echo "Building.."
                 sh '''
                 echo "Building from Jenkins file"
